@@ -24,8 +24,8 @@ public class EighthGradeDemoArcade extends OpMode {
     public void loop() {
 		telemetry.addData("Left Power", blue.getPower());
 		telemetry.addData("Right Power", red.getPower());
-		red.setPower(gamepad1.left_stick_y-gamepad1.left_stick_x);
-		blue.setPower(gamepad1.left_stick_y+gamepad1.left_stick_x);
+		red.setPower(gamepad1.left_stick_y+gamepad1.left_stick_x);
+		blue.setPower(gamepad1.left_stick_y-gamepad1.left_stick_x);
 //		red is right
 //		blue is left
 	}
