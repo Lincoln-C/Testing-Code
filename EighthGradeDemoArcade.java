@@ -17,12 +17,12 @@ public class EighthGradeDemoArcade extends OpMode {
     public void init() {
         red = hardwareMap.get(DcMotor.class, "red");
         blue = hardwareMap.get(DcMotor.class, "blue");
-	blue.setDirection(DcMotor.Direction.REVERSE);
+		blue.setDirection(DcMotor.Direction.REVERSE);
 	}
 
 	@Override
     public void loop() {
-	telemetry.update();
+		telemetry.update();
         red.setPower(gamepad1.right_stick_y);
         blue.setPower(gamepad1.left_stick_y);
 	}
